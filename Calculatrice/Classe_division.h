@@ -1,5 +1,5 @@
-#ifndef Classe_DIVISION.H
-#define Classe_DIVISION.H
+#ifndef Classe_DIVISION_H
+#define Classe_DIVISION_H
 
 #include "Classe_Mère.h"
 

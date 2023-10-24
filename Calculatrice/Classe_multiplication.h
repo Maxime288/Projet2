@@ -1,5 +1,5 @@
-#ifndef Classe_MULTIPLICATION.H
-#define Classe_MULTIPLICATION.H
+#ifndef Classe_MULTIPLICATION_H
+#define Classe_MULTIPLICATION_H
 
 #include "Classe_Mère.h"
 

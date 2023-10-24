@@ -9,6 +9,7 @@
 #include "Classe_multiplication.h"
 #include "Classe_division.h"
 #include "Classe_division.h"
+#include "Classe_Double.h"
 using namespace std;
 int main() //définie, qui est le point d'entrée du programme. À l'intérieur de la fonction main, deux objets sont créés : 
 //"addition" de type "Classe_Fille_1" et "soustraction" de type "Classe_Fille_2".
@@ -17,18 +18,20 @@ int main() //définie, qui est le point d'entrée du programme. À l'intérieur 
     Classe_Fille_2 soustraction;
     Classe_multiplication multiplication;
     Classe_division division;
-    
+    Classe_double doubleObject;
     
     double a, b;
     std::cout << "Entrez deux nombres : "; 
     std::cin >> a >> b; //Ensuite, l'utilisateur est invité à saisir deux nombres à l'aide de "std::cin". 
     //Ces nombres sont stockés dans les variables "a" et "b".
-
+    
     double resultat_addition = addition.calcul(a, b);
     double resultat_soustraction = soustraction.calcul(a, b);
     double resultat_multiplication = multiplication.calcul(a, b);
     double resultat_division = division.calcul(a, b);
-
+    double result_double_a = doubleObject.calcul(a, b);
+    double result_double_b = doubleObject.calcul(b, a);
+    
     std::cout << "Resultat de l'addition : " << resultat_addition << std::endl; //Ensuite, les fonctions "calcul" des objets 
     //"addition" et "soustraction" sont appelées avec les valeurs de "a" et "b". Les résultats sont stockés dans les variables 
     //"resultat_addition" et "resultat_soustraction".
@@ -36,6 +39,8 @@ int main() //définie, qui est le point d'entrée du programme. À l'intérieur 
 
     std::cout << "Resultat de la multiplication : " << resultat_multiplication << std::endl;
     std::cout << "Resultat de la division : " << resultat_division << std::endl;
+    std::cout << "Le double du premier nombre est : " << result_double_a << std::endl;
+    std::cout << "Le double du  deuxieme nombre est : " << result_double_b << std::endl;
     return 0;
 }
 //En résumé, ce code crée des objets de classes dérivées de la classe mère "Classe_Mère" et utilise leurs fonctions "calcul" 
